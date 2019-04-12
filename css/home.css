@@ -7,7 +7,7 @@ background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg'
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
-font-family: 'Numans', sans-serif;
+font-family: 'Times New Roman';
 }
 
 .container{
@@ -15,7 +15,7 @@ height: 100%;
 align-content: center;
 }
 
-.card{
+.card-outer{
 height: 700px;
 margin-top: auto;
 margin-bottom: auto;
@@ -94,7 +94,13 @@ border:0 !important;
 .aboutme{
 	color: white;
 	text-align:center;
+	font-family:"Comic Sans MS";
+}
+.spacer-all{
 	padding :50px;
+}
+.spacer-all-exception{
+	padding :20px;
 }
 .aboutme h3{
 	color: white;
@@ -109,6 +115,78 @@ border:0 !important;
 }
 .cvmine{
 	align:center;
+}
+.card-to-right{
+	float: right;
+  padding-right:30px;
+}
+.card-dimension{
+	width: 18rem; 
+	height: 17rem;
+	font-family:"Arial";
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  float: right;
+  padding-right:30px;
+}
+.flip-card-left{
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  float: left;
+  padding-left:30px;
+}
+.flip-card-test {
+  
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-left:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #000000;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+.set-white{
+font-family:"Garamond";
+  color: white;
+
+}
+.set-progress-role{
+	padding-right:480px;
 }
 input:focus{
 outline: 0 0 0 0  !important;
@@ -155,3 +233,7 @@ color: white;
 .links a{
 margin-left: 4px;
 }
+
+
+
+

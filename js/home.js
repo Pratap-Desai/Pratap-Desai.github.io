@@ -6,9 +6,14 @@ app
       function($scope, $interval) {
 					$scope.aboutMeActive = "active";
 					$scope.education = "";
-					$scope.experience = "";
+					$scope.contactme = "";
 					$scope.skills = "";
 					$scope.projects = "";
+					$scope.aboutMeActiveflag = false;
+					$scope.educationflag =true;
+					$scope.contactmeflag = true;
+					$scope.skillsflag = true;
+					$scope.projectsflag = true;
 					$scope.init = function() {
 						$scope.contactKeyArray = [];
 						$scope.myForm = true;
@@ -23,21 +28,31 @@ app
 						$scope.experience = "";
 						$scope.skills = "";
 						$scope.projects = "";
+						$scope.aboutMeActiveflag = true;
+						$scope.educationflag =true;
+					$scope.contactmeflag = true;
+					$scope.skillsflag = true;
+					$scope.projectsflag = true;
 						switch (navNum) {
 							case '1':
 								$scope.aboutMeActive = "active";
+								$scope.aboutMeActiveflag = false;
 								break;
 							case '2':
 								$scope.education = "active";
+								$scope.educationflag =false;
 								break;
 							case '3':
-								$scope.experience = "active";
+								$scope.skills = "active";
+								$scope.skillsflag = false;
 								break;
 							case '4':
-								$scope.skills = "active";
+								$scope.projects = "active";
+								$scope.projectsflag = false;
 								break;
 							case '5':
-								$scope.projects = "active";
+								$scope.contactme = "active";
+								$scope.contactmeflag = false;
 								break;
 							default:
 								break;
