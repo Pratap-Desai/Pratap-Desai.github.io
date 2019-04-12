@@ -25,7 +25,7 @@ app
 					$scope.toggleNav = function(navNum) {
 						$scope.aboutMeActive = "";
 						$scope.education = "";
-						$scope.experience = "";
+						$scope.contactme = "";
 						$scope.skills = "";
 						$scope.projects = "";
 						$scope.aboutMeActiveflag = true;
