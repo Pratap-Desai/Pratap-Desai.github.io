@@ -1,25 +1,21 @@
-/* Made with love by Mutiullah Samim*/
-
-@import url('https://fonts.googleapis.com/css?family=Numans');
-
 html,body{
 background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
 background-size: cover;
 background-repeat: no-repeat;
+background-color:black;
 height: 100%;
 font-family: 'Times New Roman';
 }
 
 .container{
 height: 100%;
-align-content: center;
 }
 
 .card-outer{
-height: 700px;
+height: 300px;
 margin-top: auto;
 margin-bottom: auto;
-width: 2500px;
+width: 1250px;
 background-color: rgba(0,0,0,0.5) !important;
 }
 
@@ -55,6 +51,9 @@ align-content: left;
 	float:right;
 	width=207px;
 	height=205px;
+}
+.page-width{
+	width:1250px;
 }
 .addr-mail{
 align-content:left;
@@ -121,11 +120,15 @@ border:0 !important;
   padding-right:30px;
 }
 .card-dimension{
+	width: 90%;
+	height:80%
+	font-family:"Arial";
+}
+.card-dimension-test{
 	width: 18rem; 
 	height: 17rem;
 	font-family:"Arial";
 }
-
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -186,7 +189,7 @@ font-family:"Garamond";
 
 }
 .set-progress-role{
-	padding-right:480px;
+	padding-right:250px;
 }
 input:focus{
 outline: 0 0 0 0  !important;
