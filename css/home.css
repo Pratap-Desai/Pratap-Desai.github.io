@@ -101,6 +101,9 @@ border:0 !important;
 .spacer-all-exception{
 	padding :20px;
 }
+.spacer-below{
+	padding-top:50px;
+}
 .aboutme h3{
 	color: white;
 	text-align:center;
@@ -129,13 +132,15 @@ border:0 !important;
 	height: 17rem;
 	font-family:"Arial";
 }
+.make-center{
+	align-content:center;
+}
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   perspective: 1000px;
-  float: right;
-  padding-right:30px;
+  
 }
 .flip-card-left{
   background-color: transparent;
@@ -145,8 +150,12 @@ border:0 !important;
   float: left;
   padding-left:30px;
 }
-.flip-card-test {
+.flip-card-font-one {
   
+  font-family:"Garamond";
+}
+.flip-card-font-two {
+  font-family:"Arial";
 }
 .flip-card-inner {
   position: relative;
@@ -172,11 +181,15 @@ border:0 !important;
 }
 
 .flip-card-front {
-  background-color: #bbb;
   color: black;
   z-index: 2;
 }
-
+.card-color-one{
+	background-color: green;
+}
+.card-color-two{
+	background-color: maroon;
+}
 .flip-card-back {
   background-color: #000000;
   color: white;
